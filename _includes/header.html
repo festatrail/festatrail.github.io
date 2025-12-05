@@ -1,0 +1,36 @@
+{% assign header_mode = include.mode | default: "sticky" %}
+
+<header id="header" class="header d-flex align-items-center {% if header_mode == "fixed" %} fixed-top {% else %} sticky-top {% endif %}">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="/" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Festa Trail">
+
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li class="dropdown"><a href="/#races"><span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="/programme">Programme</a></li>
+                <li><a href="/inscriptions">Inscriptions</a></li>
+                <li><a href="/reglement">Règlement</a></li>
+                <li><a href="/resultats">Résultats</a></li>
+                <li><a href="/venue">Votre venue</a></li>
+                <li><a href="/partenaires">Partenaires</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted" href=/inscriptions">S'INSCRIRE</a>
+
+    </div>
+</header>
