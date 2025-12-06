@@ -2006,7 +2006,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.call-to-action .urgency-bar {
+.urgency-bar {
   background: linear-gradient(135deg, #ff6b6b, #ee5a24);
   border-radius: 16px;
   padding: 1.5rem;
@@ -2951,7 +2951,6 @@ section,
   padding: 25px;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 10px;
-  cursor: pointer;
   transition: all 0.3s ease;
   background-color: var(--surface-color);
 }
@@ -3001,19 +3000,20 @@ section,
 
 .buy-tickets .ticket-types .ticket-option .ticket-price {
   text-align: right;
-}
-
-.buy-tickets .ticket-types .ticket-option .ticket-price .original-price {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  text-decoration: line-through;
   font-size: 14px;
-  display: block;
-  margin-bottom: 4px;
+  color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  font-style: italic;
 }
 
-.buy-tickets .ticket-types .ticket-option .ticket-price .current-price {
+.buy-tickets .ticket-types .ticket-option .ticket-price .early-price {
   color: var(--accent-color);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.buy-tickets .ticket-types .ticket-option .ticket-price .normal-price {
+  color: var(--default-color);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
