@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Festa Trail - Contact
-permalink: /contact
+permalink: /ultra-draille
 ---
 
 <body class="contact-page">
@@ -79,6 +79,15 @@ permalink: /contact
                 </div>
               </div>
 
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Working Hours</h4>
+                  <p>Monday-Saturday: 9AM - 7PM</p>
+                </div>
+              </div>
             </div>
 
             <div class="social-links-panel">
@@ -99,14 +108,92 @@ permalink: /contact
             </div>
 
             <div class="form-container">
-              <h3>Titre</h3>
+              <h3>Send Us a Message</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris hendrerit faucibus imperdiet nec eget felis.</p>
 
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
+                  <label for="nameInput">Full Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
+                  <label for="emailInput">Email Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
+                  <label for="subjectInput">Subject</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
+                  <label for="messageInput">Your Message</label>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /Contact Section -->
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tickets</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+
+
+
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="ticket-card premium">
+              <div class="ticket-header">
+                <div class="ticket-icon">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h4 class="ticket-title">Regular</h4>
+                <div class="price-section">
+                  <span class="currency">$</span>
+                  <span class="amount">125</span>
+                </div>
+                <p class="ticket-subtitle">Best value package</p>
+              </div>
+              <div class="ticket-body">
+                <ul class="benefits-list">
+                  <li><i class="bi bi-check2"></i> Event entrance</li>
+                  <li><i class="bi bi-check2"></i> Welcome kit</li>
+                  <li><i class="bi bi-check2"></i> Light refreshments</li>
+                  <li><i class="bi bi-check2"></i> Premium seating</li>
+                  <li><i class="bi bi-x"></i> Networking session</li>
+                </ul>
+                <a href="inscriptions.html" class="ticket-btn">Purchase Now</a>
+              </div>
+            </div>
+          </div><!-- End Ticket Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Tickets Section -->
 
   </main>
 
