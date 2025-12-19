@@ -3607,6 +3607,20 @@ a.btn.btn-subscribe:hover {
   }
 }
 
+.race .trail-trace{
+  width: 100%;
+  border: 0;
+  display: block;
+  height: 800px; /* desktop par défaut */
+}
+
+@media (max-width: 768px){
+  .race .trail-trace{
+    height: 75vh;       /* très lisible sur mobile */
+    min-height: 480px;  /* évite trop petit */
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
