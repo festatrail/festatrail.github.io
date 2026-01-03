@@ -4146,6 +4146,32 @@ a.btn.btn-subscribe:hover {
   }
 }
 
+/* Sommaire - desktop */
+
+.sommaire {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: inherit;
+}
+
+.sommaire a{
+  display: block;
+  padding: 2px 8px;
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+.sommaire a:hover{
+  color: var(--accent-color);
+}
+
+/* Indentation par niveau */
+.sommaire .level-2{ font-weight: 700; margin-top: 8px; }
+.sommaire .level-3{ padding-left: 18px; }
+.sommaire .level-4{ padding-left: 34px; font-size: 0.95em; }
+
+
 /*--------------------------------------------------------------
 # Privacy Section
 --------------------------------------------------------------*/
