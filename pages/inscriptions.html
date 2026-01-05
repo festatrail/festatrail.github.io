@@ -10,37 +10,11 @@ permalink: /inscriptions
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 class="heading-title">Inscriptions</h1>
-              <p>
-                Cette année, le chronométrage et les inscriptions sont gérés par ATS SPORT<br>
-                Le réglement est accessible directement en ligne sur notre site <a href="/reglement">ici</a> ou sur le site ATS Sport.
-              </p>
-              <a href="" class="btn btn-subscribe">
-                S'inscrire via ATS Sport
-              </a>
-
-              <p class="urgency-bar">
-                Le transfert de dossard est possible / n'est pas possible (en cas d'imprévu / blessure)
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Inscription</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+    {% include page-title.html
+    title="Inscriptions"
+    description=""
+    breadcrumb="Inscriptions"
+    %}
 
     <!-- Buy Tickets Section -->
     <section id="buy-tickets" class="buy-tickets section">
@@ -49,6 +23,15 @@ permalink: /inscriptions
 
         <div class="row justify-content-center">
           <div class="col-lg-8">
+
+            <p>
+              Cette année, le chronométrage et les inscriptions sont gérés par ATS SPORT<br>
+              Le réglement est accessible dans la section <a href="/reglement">Règlement</a> ou sur le site ATS Sport.
+            </p>
+            <a href="https://ats-sport.com/epreuve.php?id_epreuve=9226&course=festa-trail-pic-saint-loup" class="btn btn-subscribe">
+              S'inscrire via ATS Sport
+            </a>
+
 
             <div class="ticket-form-wrapper" data-aos="fade-up" data-aos-delay="200">
               <div class="event-info mb-5">
@@ -61,17 +44,18 @@ permalink: /inscriptions
                   <div class="ticket-label">
                     <div class="ticket-info">
                       <div class="ticket-name">105km - Ultra Draille - Solo</div>
-                      <div class="ticket-description">Dossard pour l'ultra en solo</div>
+                      <div class="ticket-description">
+                        Dossard pour l'ultra en solo<br>
+                      </div>
                       <div class="ticket-benefits">
-                        <span>✓ Ravitos</span>
-                        <span>✓ Navette</span>
-                        <span>✓ Repas</span>
-                        <span>✓ Lot bienvenue</span>
+                        <span>✓ Limité à 400 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                        <span>✓ Navette en option <b>+ 10€</b></span>
                       </div>
                     </div>
                     <div class="ticket-price">
-                      <span class="early-price"><em>90€</em> jusqu'au 5 avril 2026</span><br>
-                      <span class="normal-price"><em>100€</em> à partir du 6 avril 2026</span><br>
+                      <span class="early-price"><em>95€</em> jusqu'au 31 décembre 2025</span><br>
+                      <span class="normal-price"><em>110€</em> à partir du 1er janvier 2026</span><br>
                     </div>
                   </div>
                 </div>
@@ -80,17 +64,17 @@ permalink: /inscriptions
                   <div class="ticket-label">
                     <div class="ticket-info">
                       <div class="ticket-name">105km - Ultra Draille - Relais</div>
-                      <div class="ticket-description">Dossard pour l'ultra par équipe de 5</div>
+                      <div class="ticket-description">
+                        Dossard pour l'ultra par équipe de 5<br>
+                      </div>
                       <div class="ticket-benefits">
-                        <span>✓ Ravitos</span>
-                        <span>✓ Navette</span>
-                        <span>✓ Repas</span>
-                        <span>✓ Lot bienvenue</span>
+                        <span>✓ Limité à 40 équipes</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                        <span>✓ Navette en option pour le premier relayeur <b>+ 10€</b></span>
                       </div>
                     </div>
                     <div class="ticket-price">
-                      <span class="early-price"><em>40€/pers</em> jusqu'au 5 avril 2026</span><br>
-                      <span class="normal-price"><em>50€/pers</em> à partir du 6 avril 2026</span><br>
+                      <span class="normal-price"><em>125€/équipe</em></span>
                     </div>
                   </div>
                 </div>
@@ -101,15 +85,158 @@ permalink: /inscriptions
                       <div class="ticket-name">65km - Hérault Trail</div>
                       <div class="ticket-description">Dossard pour l'Hérault Trail</div>
                       <div class="ticket-benefits">
-                        <span>✓ Ravitos</span>
-                        <span>✓ Navette</span>
-                        <span>✓ Repas</span>
-                        <span>✓ Lot bienvenue</span>
+                        <span>✓ Limité à 500 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                        <span>✓ Navette en option <b>+ 10€</b></span>
                       </div>
                     </div>
                     <div class="ticket-price">
-                      <span class="early-price"><em>90€</em> jusqu'au 5 avril 2026</span><br>
-                      <span class="normal-price"><em>100€</em> à partir du 6 avril 2026</span><br>
+                      <span class="early-price"><em>60€</em> jusqu'au 31 décembre 2025</span><br>
+                      <span class="normal-price"><em>75€</em> à partir du 1er janvier 2026</span><br>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">44km - Marathon de l'Hortus - Solo</div>
+                      <div class="ticket-description">Dossard pour le marathon de l'Hortus en solo</div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 600 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                        <span>✓ Navette en option <b>+ 8€</b></span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="early-price"><em>40€</em> jusqu'au 31 décembre 2025</span><br>
+                      <span class="normal-price"><em>55€</em> à partir du 1er janvier 2026</span><br>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">44km - Marathon de l'Hortus - Relais</div>
+                      <div class="ticket-description">
+                        Dossard pour le marathon de l'Hortus par équipe de 2<br>
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 50 équipes</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                        <span>✓ Navette en option pour le premier relayeur <b>+ 8€</b></span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>50€/équipe</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">24km - Tour du Pic Saint Loup</div>
+                      <div class="ticket-description">
+                        Dossard pour le tour du Pic Saint Loup<br>
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 1000 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>23€</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">17km - Duo du Pic</div>
+                      <div class="ticket-description">
+                        Dossard pour le duo du Pic<br>
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 250 équipes</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>40€/équipe</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">12km - La Cécélienne - Les Déesses Muettes</div>
+                      <div class="ticket-description">
+                        Dossard pour la Cécélienne - Les Déesses Muettes<br>
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 600 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>14€</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">6km - La P'tite Boucle</div>
+                      <div class="ticket-description">
+                        Dossard pour la P'tite Boucles<br>
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 200 coureurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>10€</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">13km - La Marche Nordique</div>
+                      <div class="ticket-description">
+                        Dossard pour la Marche Nordique
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Limité à 200 marcheurs</span>
+                        <span>✓ Date limite d'inscription: 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>14€</em></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-option">
+                  <div class="ticket-label">
+                    <div class="ticket-info">
+                      <div class="ticket-name">De 1 à 5km - Pitchou'Pic</div>
+                      <div class="ticket-description">
+                        Dossard pour la Pitchou'Pic
+                      </div>
+                      <div class="ticket-benefits">
+                        <span>✓ Date limite d'inscription : 11 mai 2026</span>
+                      </div>
+                    </div>
+                    <div class="ticket-price">
+                      <span class="normal-price"><em>gratuit</em></span>
                     </div>
                   </div>
                 </div>
