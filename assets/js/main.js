@@ -135,11 +135,6 @@
   });
 
   /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
    * Init isotope layout and filters
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
