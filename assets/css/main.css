@@ -4511,3 +4511,8 @@ a.btn.btn-subscribe:hover {
 .starter-section {
   /* Add your styles here */
 }
+
+
+.table-hover{
+  --bs-table-hover-bg: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
