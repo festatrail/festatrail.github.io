@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Festa Trail - Contact
+title: Festa Trail - Ultra Draille
 permalink: /ultra-draille/
 ---
 
@@ -20,103 +20,217 @@ permalink: /ultra-draille/
           <div class="race-info-panel col-lg-3">
             <div class="race-info-header">
               <h3>Informations course</h3>
-              <p>Dignissimos deleniti accusamus rerum voluptate. Dignissimos rerum sit maiores reiciendis voluptate inventore ut.</p>
             </div>
 
-            <div class="race-info-cards">
-              <div class="info-card">
-                <div class="icon-container">
-                  <i class="bi bi-pin-map-fill"></i>
-                </div>
-                <div class="card-content">
-                  <h4>Our Location</h4>
-                  <p>4952 Hilltop Dr, Anytown, CA 90210</p>
-                </div>
-              </div>
+            <dl class="race-dl">
+              <dt>Distance</dt><dd>105 km</dd>
+              <dt>Dénivelé +</dt><dd>4500 m</dd>
+              <dt>Date</dt><dd>16/05/2026 à 6h30</dd>
+              <dt>Départ</dt><dd>Brissac</dd>
+              <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+            </dl>
 
+            <div class="race-info-header">
+              <h3>Navette</h3>
             </div>
+
+            <p>Pour vous rendre sur le départ de votre course, un service de navette est mis en place sur réservation au moment de votre inscription (uniquement pour le 1er coureur si relais).</p>
+
           </div>
 
           <div class="race-detail-panel col-lg-9">
             <div class="img-container">
-              <img src="assets/img/races/105/photo.jpg" alt="Ultra Draille" class="img-fluid">
+              <img src="{{ 'assets/img/races/105/photo.jpg' | relative_url }}" alt="Ultra Draille" class="img-fluid">
             </div>
 
             <div class="detail-container">
-              <div class="race-info d-flex align-items-center">
-                <img src="assets/img/badges/festa-105.jpg" alt="105k" class="img-fluid">
-                <div class="race-main">
-                  <h4 class="race-name">Ultra Draille</h4>
-                  <p class="race-title">En solo ou en relais</p>
+
+              <div class="race-info d-flex align-items-center gap-3">
+                <img src="{{ 'assets/img/badges/festa-105.jpg' | relative_url }}" alt="105k" style="height:90px" />
+                <div>
+                  <h2 class="mb-0">L'Ultra Draille, une aventure sportive et humaine</h2>
+                  <p class="mb-0">En solo ou en relais de 5</p>
                 </div>
-                <img src="assets/img/badges/challenge-pic.jpg" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
               </div>
+
               <div class="race-quotes">
-                <img src="assets/img/badges/utmb-100k.png" alt="utmb 100" class="img-fluid">
-                <img src="assets/img/badges/itra-5.png" alt="itra 5" class="img-fluid">
-                <img src="assets/img/badges/montagne-6.png" alt="montagne 6" class="img-fluid">
+                <img src="{{ 'assets/img/badges/utmb-100k.png' | relative_url }}" alt="utmb 100" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/itra-5.png' | relative_url }}" alt="itra 5" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/montagne-6.png' | relative_url }}" alt="montagne 6" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/challenge-pic.jpg' | relative_url }}" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
+                <i>En solo: qualificatif pour UTMB (1OO M), 5 points ITRA / 6 points Montagne</i>
               </div>
 
-
-              <h3>L'Ultra Draille, une aventure sportive et humaine</h3>
-              <p>C’est à Brissac que sera donné le départ de l’Ultra Draille. Et notre adage « courir pour découvrir » prendra tout son sens. Vous partirez à l’assaut du Roc Blanc au lever du soleil et le parcours vous permettra un voyage sur les crêtes de la Séranne ou du Monthaut aﬁn de proﬁter de paysages à couper le souﬄe. Mais du souﬄe, il faudra en avoir pour cheminer sur nos drailles, ces anciens sentiers de transhumance, où le caillou est roi ! Un beau déﬁ à relever !</p>
             </div>
 
             <div class="detail-container">
               <h3>Détail de la course</h3>
-              <img src="assets/img/races/105/trace.jpg" alt="Tracé Ultra Draille" class="img-fluid">
+              <img src="{{ 'assets/img/races/105/trace.jpg' | relative_url }}" alt="Tracé Ultra Draille" class="img-fluid">
               <!--iframe class="trail-trace" src="https://tracedetrail.fr/fr/iframe/8161" allowfullscreen loading="lazy"></iframe-->
 
               <table class="table table-hover table-striped">
                 <thead>
                  <tr>
                    <th scope="col">Point passage</th>
-                   <th scope="col" title="Distance (km)">Dist.</th>
-                   <th scope="col" title="D+ cumulé (m)">D+</th>
-                   <th scope="col" title="D- cumulé (m)">D-</th>
+                   <th scope="col" title="Distance (km)">Distance</th>
+                   <th scope="col" title="D+ cumulé (m)">Cumul D+</th>
+                   <th scope="col" title="D- cumulé (m)">Cumul D-</th>
                    <th scope="col" title="Barrière horaire">B. hor.</th>
                    <th scope="col">Ravito</th>
-                   <th scope="col">Relais</th>
                  </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Point 1</td>
-                  <td>12</td>
-                  <td>400</td>
-                  <td>200</td>
-                  <td>8h30</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td>Brissac</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>6h30</td>
+                  <td>Petit déjeuner</td>
                 </tr>
                 <tr>
-                  <td>Point 2</td>
-                  <td>20</td>
-                  <td>600</td>
-                  <td>300</td>
-                  <td>9h30</td>
-                  <td>Eau</td>
-                  <td>Relais 1 -> 2</td>
-                </tr>
-                <tr>
-                  <td>Point 3</td>
-                  <td>27</td>
+                  <td>Roc Blanc</td>
+                  <td>8,3</td>
                   <td>800</td>
-                  <td>400</td>
-                  <td>11h30</td>
-                  <td>Solide</td>
-                  <td>-</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td>Point 4</td>
-                  <td>35</td>
-                  <td>1000</td>
-                  <td>700</td>
-                  <td>12h30</td>
-                  <td>Eau</td>
-                  <td>Relais 2 -> 3</td>
+                  <td>Saint-Jean-de-Buèges (R1->2)</td>
+                  <td>16,8</td>
+                  <td>952</td>
+                  <td>842</td>
+                  <td>11h00</td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Peyre Martine</td>
+                  <td>21,8</td>
+                  <td>1588</td>
+                  <td>864</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Pégairolles-de-Buèges (R2->3)</td>
+                  <td>26</td>
+                  <td>1688</td>
+                  <td>1451</td>
+                  <td>13h30</td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Mas Aubert</td>
+                  <td>35,6</td>
+                  <td>2232</td>
+                  <td>1526</td>
+                  <td></td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Mont Saint Baudille</td>
+                  <td>44</td>
+                  <td>2705</td>
+                  <td>1667</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Saint-Guilhem-Le-Désert (R3->4)</td>
+                  <td>54,2</td>
+                  <td>2905</td>
+                  <td>2624</td>
+                  <td>20h30</td>
+                  <td>Base de vie</td>
+                </tr>
+                <tr>
+                  <td>Mas Aubert</td>
+                  <td>65</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Causse-de-la-Selle (R4->5)</td>
+                  <td>79,5</td>
+                  <td>4200</td>
+                  <td>3861</td>
+                  <td>2h30</td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Saint-Martin-De-Londres</td>
+                  <td>89,5</td>
+                  <td>4500</td>
+                  <td>4166</td>
+                  <td>5h00</td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Cazevieille</td>
+                  <td>97,5</td>
+                  <td>4827</td>
+                  <td>4317</td>
+                  <td></td>
+                  <td>Ravitaillement</td>
+                </tr>
+                <tr>
+                  <td>Saint-Mathieu-De-Tréviers</td>
+                  <td>105,5</td>
+                  <td>5089</td>
+                  <td>4971</td>
+                  <td>10h30</td>
+                  <td>Ravitaillement</td>
                 </tr>
 
+                </tbody>
+              </table>
+            </div>
+
+            <div class="detail-container">
+              <h3>Détails des relais</h3>
+              <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" title="Distance (km)">Distance</th>
+                  <th scope="col" title="D+ cumulé (m)">Cumul D+</th>
+                  <th scope="col" title="D- cumulé (m)">Cumul D-</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><b>Relais 1</b>: Brissac > Saint-Jean-De-Buèges</td>
+                  <td>16,8</td>
+                  <td>952</td>
+                  <td>842</td>
+                </tr>
+                <tr>
+                  <td><b>Relais 2</b>: Saint-Jean-De-Buèges > Pégairolles-de-Buèges</td>
+                  <td>9,2</td>
+                  <td>736</td>
+                  <td>609</td>
+                </tr>
+                <tr>
+                  <td><b>Relais 3</b>: Pégairolles-de-Buèges > Saint-Guilhem-le-Désert</td>
+                  <td>28,2</td>
+                  <td>1217</td>
+                  <td>1173</td>
+                </tr>
+                <tr>
+                  <td><b>Relais 4</b>: Saint-Guilhem-le-Désert > Causse-de-la-Selle</td>
+                  <td>25,3</td>
+                  <td>1295</td>
+                  <td>1237</td>
+                </tr>
+                <tr>
+                  <td><b>Relais 5</b>: Causse-de-la-Selle > Saint-Mathieu de Tréviers</td>
+                  <td>26</td>
+                  <td>889</td>
+                  <td>1110</td>
+                </tr>
                 </tbody>
               </table>
             </div>

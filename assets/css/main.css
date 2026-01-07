@@ -3457,7 +3457,7 @@ a.btn.btn-subscribe:hover {
 }
 
 .race .race-info-panel .race-info-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .race .race-info-panel .race-info-header h3 {
@@ -3552,8 +3552,29 @@ a.btn.btn-subscribe:hover {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
 }
 
-.race .detail-container h3 {
-  font-size: 26px;
+.race .detail-container .race-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.race .detail-container .race-quotes .race-points {
+  height: 42px;
+  width: auto;
+  display: block;
+  padding: 4px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.race .detail-container .race-quotes .challenge-pic {
+  margin-left: auto;
+  height: 120px;
+}
+
+.race .detail-container h2 {
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--heading-color);
@@ -3565,9 +3586,10 @@ a.btn.btn-subscribe:hover {
 }
 
 .race .detail-container p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  font-size: 20px;
+  color: var(--accent-color);
   margin-bottom: 25px;
+  font-weight: 500;
 }
 
 .race .detail-container .race-info {
