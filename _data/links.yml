@@ -1,0 +1,25 @@
+pages:
+  home: /
+  programme: /programme/
+  inscriptions: /sinscrire-en-ligne/
+  reglement: /reglement-materie-obligatoire/
+  resultats: /resultats/
+  contact: /contact/
+  benevolat: /benevolat/
+  partenaires: /partenaires/
+races:
+  ultra-draille: /ultra-draille/
+  herault-trail: /65km-herault-trail/
+  marathon-hortus: /44km-marathon-de-lhortus/
+  tour-pic: /24km-tour-du-pic-saint-loup/
+  duo-pic: /17km-duo-du-pic/
+  cecelienne: /13-km-cecelienne/
+  ptite-boucle: /7-km-ptite-boucle/
+  marche-nordique: /13km-marche-nordique/
+  pitchou-pic: /courses-enfants/
+legal:
+  mention-legales: /mentions-legales/
+  cookies: /cookies/
+social:
+  facebook: https://www.facebook.com/FestaTrailPSL/
+  instagram: https://www.instagram.com/festatrail/
