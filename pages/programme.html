@@ -1,0 +1,492 @@
+---
+layout: page
+title: Festa Trail - Programme
+permalink: /programme
+---
+
+<body class="index-page">
+
+  {% include header.html %}
+
+  <main class="main">
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Programme</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="schedule-header">
+          <ul class="nav nav-tabs" id="schedule-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="schedule-tab-1" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane-1" type="button" role="tab" aria-controls="schedule-tab-pane-1" aria-selected="true">Vendredi<br>15/05/2026</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="schedule-tab-2" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane-2" type="button" role="tab" aria-controls="schedule-tab-pane-2" aria-selected="false">Samedi<br>16/05/2026</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="schedule-tab-3" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane-3" type="button" role="tab" aria-controls="schedule-tab-pane-3" aria-selected="false">Dimanche<br>17/05/2026</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="schedule-tabContent">
+
+          <div class="tab-pane fade show active" id="schedule-tab-pane-1" role="tabpanel" aria-labelledby="schedule-tab-1" tabindex="0">
+            <div class="schedule-content">
+              <div class="session-timeline">
+
+                {% include calendar-event.html
+                start="14:00" end="19:00" type="Animation" spot="Saint-Mathieu-de-Tréviers"
+                title="Salon Festa Trail"
+                description=""%}
+
+                {% include calendar-event.html
+                start="14:00" end="19:00" type="Dossards" spot="Saint-Mathieu-de-Tréviers"
+                title="Retrait des dossards"
+                description=""%}
+
+                {% include calendar-event.html
+                start="14:00" end="19:00" type="Repas" spot="Saint-Mathieu-de-Tréviers"
+                title="Buvette et Food trucks"
+                description=""%}
+
+                {% include calendar-event.html
+                start="17:30" type="Briefing" spot="Saint-Mathieu-de-Tréviers"
+                title="Buvette et Food trucks"
+                description=""%}
+
+                {% include calendar-event.html
+                start="18:30" type="Animation" spot="Saint-Mathieu-de-Tréviers"
+                title="Inauguration du Festa Trail"
+                description=""%}
+                
+              </div><!-- End Session Timeline -->
+            </div><!-- End Schedule Content -->
+          </div>
+
+          <div class="tab-pane fade" id="schedule-tab-pane-2" role="tabpanel" aria-labelledby="schedule-tab-2" tabindex="0">
+            <div class="schedule-content">
+              <div class="session-timeline">
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">5:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Navette</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ navette Ultra Draille</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">6:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Brissac</span>
+                      </div>
+                      <h3 class="session-title">Départ Ultra Draille</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">7:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Navette</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ navette Hérault Trail</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">8:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Brissac</span>
+                      </div>
+                      <h3 class="session-title">Départ Hérault Trail</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track development">Animation</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Salon Festa Trail</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track design">Dossards</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Retrait des dossards</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track break">Repas</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Buvette et Food trucks</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">10:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ Pitchoupic 1</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">10:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ Pitchoupic 2</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">10:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Navette</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ navette Duo du Pic</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">11:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ Pitchoupic 3</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">11:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Départ Pitchoupic 4</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">12:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Martin-de-Londres</span>
+                      </div>
+                      <h3 class="session-title">Départ Duo du Pic</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">12:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Pitchoupic 3 et 4</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track development">Animation</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Animation musicale La Banda Bonhomme</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">15:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Duo du Pic</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">17:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Hérault Trail</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">18:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Course</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Martin-de-Londres</span>
+                      </div>
+                      <h3 class="session-title">Départ Cécélienne</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">20:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Ultra Draille relais de 5</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">20:30</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Ultra Draille</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">21:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track business">Podium</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Podium Cécélienne</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+              </div><!-- End Session Timeline -->
+            </div><!-- End Schedule Content -->
+          </div>
+
+          <div class="tab-pane fade" id="schedule-tab-pane-3" role="tabpanel" aria-labelledby="schedule-tab-3" tabindex="0">
+            <div class="schedule-content">
+              <div class="session-timeline">
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">16:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track development">Animation</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Salon Festa Trail</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track design">Dossards</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Retrait des dossards</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+
+                  </div>
+                </div><!-- End Session Block -->
+
+                <div class="session-block">
+                  <div class="session-time">
+                    <span class="start">09:00</span>
+                    <span class="end">19:00</span>
+                  </div>
+                  <div class="session-card">
+                    <div class="session-info">
+                      <div class="session-meta">
+                        <span class="track break">Repas</span>
+                        <span class="room"><i class="bi bi-geo-alt"></i> Saint-Mathieu-de-Tréviers</span>
+                      </div>
+                      <h3 class="session-title">Buvette et Food trucks</h3>
+                      <!--p class="session-description"></p-->
+                    </div>
+                  </div>
+                </div><!-- End Session Block -->
+
+              </div><!-- End Session Timeline -->
+            </div><!-- End Schedule Content -->
+          </div>
+
+        </div><!-- End Tab Content -->
+
+      </div>
+
+    </section><!-- /Schedule Section -->
+    
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>

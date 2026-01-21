@@ -1,0 +1,16 @@
+<div class="session-block">
+    <div class="session-time">
+        <span class="start">{{ include.start }}</span>
+        <span class="end">{{ include.end }}</span>
+    </div>
+    <div class="session-card">
+        <div class="session-info">
+            <div class="session-meta">
+                <span class="track business">{{ include.type }}</span>
+                <span class="room"><i class="bi bi-geo-alt"></i> {{ include.spot }}</span>
+            </div>
+            <h3 class="session-title">{{ include.title }}</h3>
+            <!--p class="session-description">{{ include.description }}</p-->
+        </div>
+    </div>
+</div>
