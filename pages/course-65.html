@@ -1,0 +1,69 @@
+---
+layout: page
+title: Festa Trail - Hérault Trail
+permalink: /65km-herault-trail/
+---
+
+<body class="race-page">
+
+    {% include header.html %}
+
+    <main class="main">
+        <section id="race" class="race section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="race-info-panel col-lg-3">
+                        <div class="race-info-header">
+                            <h3>Informations course</h3>
+                        </div>
+
+                        <dl class="race-dl">
+                            <dt>Distance</dt><dd>65 km</dd>
+                            <dt>Dénivelé +</dt><dd>2800 m</dd>
+                            <dt>Date</dt><dd>16/05/2026 à 8h30</dd>
+                            <dt>Départ</dt><dd>Brissac</dd>
+                            <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="race-detail-panel col-lg-9">
+                        <div class="img-container">
+                            <img src="{{ 'assets/img/races/65/photo.jpg' | relative_url }}" alt="Hérault Trail" class="img-fluid">
+                        </div>
+
+                        <div class="detail-container">
+
+                            <div class="race-info d-flex align-items-center gap-3">
+                                <img src="{{ 'assets/img/badges/festa-65.jpg' | relative_url }}" alt="65k" style="height:90px" />
+                                <div>
+                                    <h2 class="mb-0">L'Hérault Trail, un trail qui se mérite</h2>
+                                </div>
+                            </div>
+
+                            <div class="race-quotes">
+                                <img src="{{ 'assets/img/badges/utmb-50k.png' | relative_url }}" alt="utmb 50" class="img-fluid race-points">
+                                <img src="{{ 'assets/img/badges/itra-3.png' | relative_url }}" alt="itra 3" class="img-fluid race-points">
+                                <img src="{{ 'assets/img/badges/montagne-5.png' | relative_url }}" alt="montagne 5" class="img-fluid race-points">
+                                <img src="{{ 'assets/img/badges/challenge-pic.jpg' | relative_url }}" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
+                                <p>
+                                    <i>Qualificatif pour UTMB 50K, 3 points ITRA / 5 points Montagne</i>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        {% include trace.html data="races.herault-trail-checkpoints" image="assets/img/races/65/trace.jpg" image_alt="Tracé Hérault Trail"%}
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+</body>

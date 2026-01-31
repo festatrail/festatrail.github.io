@@ -3571,6 +3571,13 @@ a.btn.btn-subscribe:hover {
   gap: 10px;
 }
 
+.race .detail-container .race-quotes p {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
+
 .race .detail-container .race-quotes .race-points {
   height: 42px;
   width: auto;
