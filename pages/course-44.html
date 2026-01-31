@@ -1,0 +1,76 @@
+---
+layout: page
+title: Festa Trail - Marathon de l'Hortus
+permalink: /44km-marathon-de-lhortus/
+---
+
+<body class="race-page">
+
+  {% include header.html %}
+
+  <main class="main">
+    <section id="race" class="race section">
+      <div class="container">
+        <div class="row">
+
+          <div class="race-info-panel col-lg-3">
+            <div class="race-info-header">
+              <h3>Informations course</h3>
+            </div>
+
+            <dl class="race-dl">
+              <dt>Distance</dt><dd>44 km</dd>
+              <dt>Dénivelé +</dt><dd>1800 m</dd>
+              <dt>Date</dt><dd>17/05/2026 à 7h00</dd>
+              <dt>Départ</dt><dd>Claret</dd>
+              <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+            </dl>
+
+            <div class="race-info-header">
+              <h3>Navette</h3>
+            </div>
+            <p>Pour vous rendre sur le départ de votre course, un service de navette est mis en place sur réservation au moment de votre inscription (uniquement pour le 1er coureur si relais).</p>
+
+          </div>
+
+          <div class="race-detail-panel col-lg-9">
+            <div class="img-container">
+              <img src="{{ 'assets/img/races/44/photo.jpg' | relative_url }}" alt="Marathon de l'Hortus" class="img-fluid">
+            </div>
+
+            <div class="detail-container">
+
+              <div class="race-info d-flex align-items-center gap-3">
+                <img src="{{ 'assets/img/badges/festa-44.jpg' | relative_url }}" alt="44k" style="height:90px" />
+                <div>
+                  <h2 class="mb-0">Le Marathon de l'Hortus, la promesse de belles émotions</h2>
+                  <p class="mb-0">En solo ou en relais de 2</p>
+                </div>
+              </div>
+
+              <div class="race-quotes">
+                <img src="{{ 'assets/img/badges/utmb-50k-qualifier.png' | relative_url }}" alt="utmb 50" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/itra-2.png' | relative_url }}" alt="itra 2" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/montagne-4.png' | relative_url }}" alt="montagne 4" class="img-fluid race-points">
+                <img src="{{ 'assets/img/badges/challenge-pic.jpg' | relative_url }}" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
+                <p>
+                  <i>En solo: qualificatif pour UTMB 5OK, 2 points ITRA / 4 points Montagne</i>
+                </p>
+              </div>
+
+            </div>
+
+            {% include trace.html data="races.marathon-hortus-checkpoints" image="assets/img/races/44/trace.jpg" image_alt="Tracé Marathon de l'Hortus"%}
+            {% include relais-table.html data="races.marathon-hortus-relais" %}
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
