@@ -3480,6 +3480,18 @@ a.btn.btn-subscribe:hover {
   margin-bottom: auto;
 }
 
+@media (max-width: 991px) {
+  .race .race-info-panel {
+    margin: 0 12px;
+    width: calc(100% - 24px);
+    max-width: 100%;
+  }
+
+  .race .race-info-panel + .race-detail-panel {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 991px) {
   .race .race-info-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -4515,4 +4527,9 @@ a.btn.btn-subscribe:hover {
 
 .table-hover{
   --bs-table-hover-bg: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
