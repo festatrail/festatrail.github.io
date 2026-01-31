@@ -1,0 +1,47 @@
+{%- comment -%}
+Usage:
+
+{% include relais-table.html
+data="races.ultra-draille-relais"
+%}
+
+- data: chemin dans site.data vers ton CSV (sans _data/, sans extension)
+ex: _data/races/ultra-draille-relais.csv => data="races.ultra-draille-relais"
+
+{%- endcomment -%}
+
+{%- assign rows = include.data | split: "." -%}
+{%- assign dataset = site.data -%}
+{%- for key in rows -%}
+{%- assign dataset = dataset[key] -%}
+{%- endfor -%}
+
+{%- if dataset and dataset.size > 0 -%}
+<div class="detail-container">
+    <h3>Détail des relais</h3>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Relais</th>
+                <th scope="col" title="Distance (km)">Distance</th>
+                <th scope="col" title="D+ cumulé (m)">Cumul D+</th>
+                <th scope="col" title="D- cumulé (m)">Cumul D-</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%- for r in dataset -%}
+            <tr>
+                <td>{{ r.segment | default: "" }}</td>
+                <td>{{ r.distance | default: "" }}</td>
+                <td>{{ r.dplus | default: "" }}</td>
+                <td>{{ r.dminus | default: "" }}</td>
+            </tr>
+            {%- endfor -%}
+            </tbody>
+        </table>
+    </div>
+</div>
+{%- else -%}
+<p><em>Aucune donnée disponible.</em></p>
+{%- endif -%}

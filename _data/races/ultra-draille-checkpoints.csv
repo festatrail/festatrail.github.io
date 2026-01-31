@@ -1,0 +1,14 @@
+point,distance,dplus,dminus,barrier,ravito
+Brissac,0,0,0,6h30,"Petit déjeuner"
+Roc Blanc,"8,3",800,0,,
+Saint-Jean-de-Buèges (R1->2),"16,8",952,842,11h00,Ravitaillement
+Peyre Martine,"21,8",1588,864,,
+Pégairolles-de-Buèges (R2->3),26,1688,1451,13h30,Ravitaillement
+Mas Aubert,"35,6",2232,1526,,Ravitaillement
+Mont Saint Baudille,44,2705,1667,,
+Saint-Guilhem-Le-Désert (R3->4),"54,2",2905,2624,20h30,"Base de vie"
+Mas Aubert,65,,,,Ravitaillement
+Causse-de-la-Selle (R4->5),"79,5",4200,3861,2h30,Ravitaillement
+Saint-Martin-De-Londres,"89,5",4500,4166,5h00,Ravitaillement
+Cazevieille,"97,5",4827,4317,,Ravitaillement
+Saint-Mathieu-De-Tréviers,"105,5",5089,4971,10h30,Ravitaillement

@@ -1,0 +1,69 @@
+{%- comment -%}
+Usage:
+
+{% include trace.html
+data="races.ultra-draille-checkpoints"
+image="assets/img/races/105/trace.jpg"
+image_alt="Tracé Ultra Draille"
+%}
+
+Params:
+- data (required): chemin vers le CSV dans site.data
+- image (optional): chemin relatif de l'image
+- image_alt (optional): alt de l'image
+{%- endcomment -%}
+
+{%- assign keys = include.data | split: "." -%}
+{%- assign dataset = site.data -%}
+{%- for key in keys -%}
+{%- assign dataset = dataset[key] -%}
+{%- endfor -%}
+
+
+<div class="detail-container">
+
+    {%- if include.title -%}
+    <h3>Détail de la course</h3>
+    {%- endif -%}
+
+    {%- if include.image -%}
+    <img
+            src="{{ include.image | relative_url }}"
+            alt="{{ include.image_alt | default: include.title | default: '' }}"
+            class="img-fluid mb-3"
+            loading="lazy"
+    >
+    <!--iframe class="trail-trace" src="https://tracedetrail.fr/fr/iframe/8161" allowfullscreen loading="lazy"></iframe-->
+    {%- endif -%}
+
+    {%- if dataset and dataset.size > 0 -%}
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Point passage</th>
+                <th scope="col" title="Distance (km)">Distance</th>
+                <th scope="col" title="D+ cumulé (m)">Cumul D+</th>
+                <th scope="col" title="D- cumulé (m)">Cumul D-</th>
+                <th scope="col" title="Barrière horaire">B. hor.</th>
+                <th scope="col">Ravito</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%- for r in dataset -%}
+            <tr>
+                <td>{{ r.point | default: "" }}</td>
+                <td>{{ r.distance | default: "" }}</td>
+                <td>{{ r.dplus | default: "" }}</td>
+                <td>{{ r.dminus | default: "" }}</td>
+                <td>{{ r.barrier | default: "" }}</td>
+                <td>{{ r.ravito | default: "" }}</td>
+            </tr>
+            {%- endfor -%}
+            </tbody>
+        </table>
+    </div>
+    {%- else -%}
+    <p><em>Aucune donnée disponible.</em></p>
+    {%- endif -%}
+</div>
