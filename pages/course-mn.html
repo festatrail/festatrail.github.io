@@ -1,0 +1,59 @@
+---
+layout: page
+title: Festa Trail - Marche Nordique
+permalink: /13km-marche-nordique/
+---
+
+<body class="race-page">
+
+  {% include header.html %}
+
+  <main class="main">
+    <section id="race" class="race section">
+      <div class="container">
+        <div class="row">
+
+          <div class="race-info-panel col-lg-3">
+            <div class="race-info-header">
+              <h3>Informations course</h3>
+            </div>
+
+            <dl class="race-dl">
+              <dt>Distance</dt><dd>13 km</dd>
+              <dt>Dénivelé +</dt><dd>300 m</dd>
+              <dt>Date</dt><dd>16/05/2026 à 18h30</dd>
+              <dt>Départ</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+              <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+            </dl>
+            
+          </div>
+
+          <div class="race-detail-panel col-lg-9">
+            <div class="img-container">
+              <img src="{{ 'assets/img/races/mn/photo.jpg' | relative_url }}" alt="Marche Nordique" class="img-fluid">
+            </div>
+
+            <div class="detail-container">
+
+              <div class="race-info d-flex align-items-center gap-3">
+                <img src="{{ 'assets/img/badges/festa-13.jpg' | relative_url }}" alt="13k" style="height:90px" />
+                <div>
+                  <h2 class="mb-0">La Marche Nordique, tonifiante et conviviale</h2>
+                </div>
+              </div>
+
+            </div>
+
+            {% include trace.html data="races.cecelienne-checkpoints" image="assets/img/races/13/trace.jpg" image_alt="Marche Nordique"%}
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
