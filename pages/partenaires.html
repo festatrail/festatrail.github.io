@@ -10,17 +10,30 @@ permalink: /partenaires/
 
   <main class="main">
 
-    <div class="page-title">
+    {% include page-title.html
+    title="Partenariats"
+    description="Festa Trail - Partenariats"
+    breadcrumb="Partenaires"
+    %}
 
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="/">Festa</a></li>
-            <li class="current">Partenaires</li>
-          </ol>
+
+    <section>
+
+      <div class="container">
+        <div class="text-center">
+          <p>
+            <b>Devenez partenaire du Festa Trail !</b><br>
+            Les formules de partenariat possibles : insertions publicitaires dans le livret-programme<br/> et autres supports de communication, échanges marchandises, sponsoring…
+          </p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+            <a href="{{ site.data.links.pages.contact | relative_url }}" class="btn btn-subscribe">Contact sponsors et annonceurs</a>
+          </div>
         </div>
-      </nav>
-    </div>
+      </div>
+
+    </section>
+
 
     {% include sponsors.html %}
 
