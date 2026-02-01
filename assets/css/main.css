@@ -4555,3 +4555,11 @@ a.btn.btn-subscribe:hover {
 #sponsors .section-title:first-child {
   margin-top: 4em;
 }
+
+#benevolat h1 {
+  margin-bottom: 40px;
+}
+
+#benevolat img {
+  border-radius: 20px;
+}
