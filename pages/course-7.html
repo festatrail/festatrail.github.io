@@ -1,0 +1,63 @@
+---
+layout: page
+title: Festa Trail - La Pt'ite Boucle
+permalink: /7-km-ptite-boucle/
+---
+
+<body class="race-page">
+
+  {% include header.html %}
+
+  <main class="main">
+    <section id="race" class="race section">
+      <div class="container">
+        <div class="row">
+
+          <div class="race-info-panel col-lg-3">
+            <div class="race-info-header">
+              <h3>Informations course</h3>
+            </div>
+
+            <dl class="race-dl">
+              <dt>Distance</dt><dd>7 km</dd>
+              <dt>Dénivelé +</dt><dd>80 m</dd>
+              <dt>Date</dt><dd>17/05/2026 à 10h00</dd>
+              <dt>Départ</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+              <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+            </dl>
+
+          </div>
+
+          <div class="race-detail-panel col-lg-9">
+            <div class="img-container">
+              <img src="{{ 'assets/img/races/13/photo.jpg' | relative_url }}" alt="La Pt'ite Boucle" class="img-fluid">
+            </div>
+
+            <div class="detail-container">
+
+              <div class="race-info d-flex align-items-center gap-3">
+                <img src="{{ 'assets/img/badges/festa-7.jpg' | relative_url }}" alt="7k" style="height:90px" />
+                <div>
+                  <h2 class="mb-0">La Pt'ite Boucle, à chacun son rythme</h2>
+                </div>
+              </div>
+
+              <div class="race-quotes">
+                <img src="{{ 'assets/img/badges/challenge-pic.jpg' | relative_url }}" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
+              </div>
+
+            </div>
+
+            {% include trace.html data="races.ptite-boucle-checkpoints" image="assets/img/races/6/trace.jpg" image_alt="Tracé La Pt'ite Boucle"%}
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
