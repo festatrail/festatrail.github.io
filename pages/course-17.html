@@ -1,0 +1,69 @@
+---
+layout: page
+title: Festa Trail - Duo du Pic
+permalink: /17km-duo-du-pic/
+---
+
+<body class="race-page">
+
+  {% include header.html %}
+
+  <main class="main">
+    <section id="race" class="race section">
+      <div class="container">
+        <div class="row">
+
+          <div class="race-info-panel col-lg-3">
+            <div class="race-info-header">
+              <h3>Informations course</h3>
+            </div>
+
+            <dl class="race-dl">
+              <dt>Distance</dt><dd>17 km</dd>
+              <dt>Dénivelé +</dt><dd>450 m</dd>
+              <dt>Date</dt><dd>16/05/2026 à 12h00</dd>
+              <dt>Départ</dt><dd>Saint-Martin de Londres</dd>
+              <dt>Arrivée</dt><dd>Saint-Mathieu-de-Tréviers</dd>
+            </dl>
+
+            <div class="race-info-header">
+              <h3>Navette</h3>
+            </div>
+            <p>Pour vous rendre sur le départ de votre course, un service de navette est mis en place sur réservation au moment de votre inscription.</p>
+
+          </div>
+
+          <div class="race-detail-panel col-lg-9">
+            <div class="img-container">
+              <img src="{{ 'assets/img/races/17/photo.jpg' | relative_url }}" alt="Duo du Pic" class="img-fluid">
+            </div>
+
+            <div class="detail-container">
+
+              <div class="race-info d-flex align-items-center gap-3">
+                <img src="{{ 'assets/img/badges/festa-17.jpg' | relative_url }}" alt="17k" style="height:90px" />
+                <div>
+                  <h2 class="mb-0">Le Duo du Pic, courir ensemble nous rassemble</h2>
+                  <p class="mb-0">En duo</p>
+                </div>
+              </div>
+
+              <div class="race-quotes">
+                <img src="{{ 'assets/img/badges/challenge-pic.jpg' | relative_url }}" alt="Challenge du Pic Saint Loup" class="ms-auto challenge-pic">
+              </div>
+
+            </div>
+
+            {% include trace.html data="races.duo-pic-checkpoints" image="assets/img/races/17/trace.jpg" image_alt="Tracé Duo du Pic"%}
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
