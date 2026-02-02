@@ -1291,29 +1291,49 @@ section,
   letter-spacing: 0.5px;
 }
 
-.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.keynote {
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.rando {
   background: color-mix(in srgb, #ff6b6b, transparent 85%);
   color: #ff6b6b;
 }
 
-.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.development {
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.animation {
   background: color-mix(in srgb, #4ecdc4, transparent 85%);
   color: #4ecdc4;
 }
 
-.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.design {
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.repas {
   background: color-mix(in srgb, #45b7d1, transparent 85%);
   color: #45b7d1;
 }
 
-.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.business {
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.navette {
   background: color-mix(in srgb, #f7931e, transparent 85%);
   color: #f7931e;
 }
 
-.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.break {
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.course {
   background: color-mix(in srgb, var(--accent-color), transparent 85%);
   color: var(--accent-color);
+}
+
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.podium {
+  background: color-mix(in srgb, #f4d35e, transparent 85%);
+  color: #f4d35e;
+}
+
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.dossards {
+  background: color-mix(in srgb, #9b5de5, transparent 85%);
+  color: #9b5de5;
+}
+
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.briefing {
+  background: color-mix(in srgb, #9b5de5, transparent 85%);
+  color: #9b5de5;
+}
+
+.schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta  .track.navette {
+  background: color-mix(in srgb, #3a86ff, transparent 85%);
+  color: #3a86ff;
 }
 
 .schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .room {

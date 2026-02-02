@@ -6,7 +6,25 @@
     <div class="session-card">
         <div class="session-info">
             <div class="session-meta">
-                <span class="track business">{{ include.type }}</span>
+                <span class="track {{ include.type }}">
+                    {% if include.type == "animation" %}
+                      <i class="fa-solid fa-guitar"></i> Animation
+                    {% elsif include.type == "dossards" %}
+                      <i class="fa-regular fa-id-card"></i> Dossards
+                    {% elsif include.type == "repas" %}
+                      <i class="fa-solid fa-utensils"></i> Repas
+                    {% elsif include.type == "briefing" %}
+                      <i class="fa-solid fa-bullhorn"></i> Briefing
+                    {% elsif include.type == "course" %}
+                      <i class="fa-solid fa-person-running"></i> Course
+                    {% elsif include.type == "podium" %}
+                      <i class="fa-solid fa-trophy"></i> Podium
+                    {% elsif include.type == "navette" %}
+                      <i class="fa-solid fa-van-shuttle"></i> Navette
+                    {% elsif include.type == "rando" %}
+                        <i class="fa-solid fa-person-hiking"></i> Randonnée
+                    {% endif %}
+                </span>
                 <span class="room"><i class="bi bi-geo-alt"></i> {{ include.spot }}</span>
             </div>
             <h3 class="session-title">{{ include.title }}</h3>
