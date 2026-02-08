@@ -1,0 +1,94 @@
+{%- comment -%}
+Ultra-simple JSON-LD include for Jekyll
+
+Site-level (from _config.yml):
+- site.title, site.url, site.logo, site.image
+
+Event-level (from _data/event.yml), only for home page :
+- site.data.event.organization
+- site.data.event.location
+- site.data.event.startDate
+- site.data.event.endDate
+- site.data.event.name
+
+For race pages only:
+- page.race.name
+- page.race.startDate
+- page.race.location
+
+{%- endcomment -%}
+
+{%- assign canonical = page.url | absolute_url -%}
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ site.title | jsonify }},
+        "url": {{ site.url | jsonify }}
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": {{ site.data.event.organization | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "logo": {{ site.logo | absolute_url | jsonify }}
+    }
+</script>
+
+{%- if page.url == "/" -%}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": {{ site.data.event.name | jsonify }},
+        "startDate": {{ site.data.event.startDate | jsonify }}
+        "endDate": {{ site.data.event.endDate | jsonify }}
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "url": {{ "/" | absolute_url | jsonify }},
+        "image": {{ site.image | absolute_url | jsonify }},
+        "location": {
+            "@type": "Place",
+            "name": {{ site.data.event.location | jsonify }}
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": {{ site.data.event.organization | default: site.title | jsonify }}
+        }
+    }
+</script>
+{%- endif -%}
+
+{%- if page.race -%}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": {{ page.race.name | jsonify }},
+        "startDate": {{ page.race.startDate | jsonify }},
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "url": {{ canonical | jsonify }},
+        "image": {{ page.image | default: site.image | absolute_url | jsonify }},
+        "location": {
+            "@type": "Place",
+            "name": {{ page.race.location | default: site.data.event.location | jsonify }}
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": {{ site.data.event.organization | default: site.title | jsonify }}
+        },
+        "isPartOf": {
+            "@type": "SportsEvent",
+            "name": {{ site.data.event.name | default: site.title | jsonify }},
+            "url": {{ "/" | absolute_url | jsonify }},
+            "startDate": {{ site.data.event.startDate | jsonify }},
+            "endDate": {{ site.data.event.endDate | jsonify }}
+        }
+    }
+</script>
+{%- endif -%}

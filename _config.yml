@@ -1,27 +1,11 @@
-title: Festa Trail
-description: "Le Festa Trail du Pic Saint-Loup : parcours, inscriptions, infos pratiques."
+title: "Festa Trail"
 url: "https://festatrail.github.io"
 baseurl: ""
-locale: fr_FR
-timezone: Europe/Paris
-permalink: pretty
-
-author:
-  name: "Festa Trail"
-  email: "contact@festatrail.com"
-
-logo: /assets/img/logo.png
-image: /assets/img/og-default.jpg
-
-social:
-  name: "Festa Trail"
-  links:
-    - https://www.facebook.com/FestaTrailPSL/
-    - https://www.instagram.com/festatrail/
-
-twitter:
-  card: summary_large_image
+locale: "fr_FR"
+permalink: "pretty"
+robots: "index,follow"
+logo: "/assets/img/logo.png"
+image: "/assets/img/og-default.jpg"
 
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
