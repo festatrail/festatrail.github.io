@@ -76,7 +76,7 @@ For race pages only:
         "image": {{ page.image | default: site.image | absolute_url | jsonify }},
         "location": {
             "@type": "Place",
-            "name": {{ page.race.location | default: site.data.event.location | jsonify }}
+            "name": {{ site.data.event.location | jsonify }}
         },
         "organizer": {
             "@type": "Organization",
