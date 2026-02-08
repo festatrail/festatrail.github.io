@@ -45,8 +45,8 @@ For race pages only:
         "@context": "https://schema.org",
         "@type": "SportsEvent",
         "name": {{ site.data.event.name | jsonify }},
-        "startDate": {{ site.data.event.startDate | jsonify }}
-        "endDate": {{ site.data.event.endDate | jsonify }}
+        "startDate": {{ site.data.event.startDate | jsonify }},
+        "endDate": {{ site.data.event.endDate | jsonify }},
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "url": {{ "/" | absolute_url | jsonify }},
