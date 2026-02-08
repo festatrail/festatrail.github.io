@@ -1276,9 +1276,6 @@ section,
 }
 
 .schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   margin-bottom: 12px;
 }
 
@@ -1289,6 +1286,15 @@ section,
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .session-meta .room {
+    display: block;
+    margin-top: 4px;
+  }
 }
 
 .schedule .schedule-content .session-timeline .session-block .session-card .session-info .session-meta .track.rando {
