@@ -4,7 +4,7 @@ Needs: site.title, site.robots, site.locale, site.image, site.url, site.baseurl
 Per page: page.title, page.description (mandatory), page.image (optional)
 {%- endcomment -%}
 
-<title>{{ page.title }}</title>
+<title>{{ page.title }} - {{ site.title }}</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +18,8 @@ Per page: page.title, page.description (mandatory), page.image (optional)
 <link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="x-default">
 
 <meta property="og:locale" content="{{ site.locale }}">
-<meta property="og:site_name" content="{{ site.title | escape }}">
-<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title }} - {{ site.title }}">
 <meta property="og:description" content="{{ page.description | strip_html | strip_newlines | escape }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">

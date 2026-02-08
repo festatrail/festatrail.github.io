@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Festa Trail - Programme"
-description: "Programme du Festa Trail"
+title: "Programme Festa Trail 2026"
+description: "Programme Festa Trail : horaires des départs, navettes, retraits des dossards, animations, podiums et infos pratiques du week-end."
 permalink: /programme/
 ---
 
@@ -11,13 +11,14 @@ permalink: /programme/
 
   <main class="main">
 
+    {% include page-title.html
+    title="Programme Festa Trail 2026"
+    description="Horaires des départs, navettes, retraits des dossards, animations, podiums et infos pratiques du week-end."
+    breadcrumb="Programme Festa Trail 2026"
+    %}
+
     <!-- Schedule Section -->
     <section id="schedule" class="schedule section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Programme</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -58,7 +59,7 @@ permalink: /programme/
 
                 {% include calendar-event.html
                 start="17:30" type="briefing" spot="Saint Mathieu de Tréviers"
-                title="Buvette et Food trucks"
+                title="Briefing Ultra Draille et Hérault Trail"
                 description=""%}
 
                 {% include calendar-event.html
@@ -75,22 +76,22 @@ permalink: /programme/
               <div class="session-timeline">
 
                 {% include calendar-event.html
-                start="5:00" type="navette" spot="Saint Mathieu de Tréviers"
+                start="05:00" type="navette" spot="Saint Mathieu de Tréviers"
                 title="Départ navette Ultra Draille"
                 description=""%}
 
                 {% include calendar-event.html
-                start="6:30" type="course" spot="Brissac"
+                start="06:30" type="course" spot="Brissac"
                 title="Départ Ultra Draille"
                 description=""%}
 
                 {% include calendar-event.html
-                start="7:00" type="navette" spot="Saint Mathieu de Tréviers"
+                start="07:00" type="navette" spot="Saint Mathieu de Tréviers"
                 title="Départ navette Hérault Trail"
                 description=""%}
 
                 {% include calendar-event.html
-                start="8:30" type="course" spot="Brissac"
+                start="08:30" type="course" spot="Brissac"
                 title="Départ Hérault Trail"
                 description=""%}
 
@@ -105,7 +106,7 @@ permalink: /programme/
                 description=""%}
 
                 {% include calendar-event.html
-                start="09:00" end="00:00" type="repas" spot="Saint Mathieu de Tréviers"
+                start="09:00" end="Minuit" type="repas" spot="Saint Mathieu de Tréviers"
                 title="Buvette et Food trucks"
                 description=""%}
 
@@ -190,7 +191,7 @@ permalink: /programme/
               <div class="session-timeline">
 
                 {% include calendar-event.html
-                start="5:50" type="navette" spot="Saint Mathieu de Tréviers"
+                start="05:50" type="navette" spot="Saint Mathieu de Tréviers"
                 title="Départ navette Marathon de l'Hortus"
                 description=""%}
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Festa Trail - Règlement"
-description: "Règlement du Festa Trail"
+title: "Règlement & matériel obligatoire"
+description: "Règlement officiel du Festa Trail 2026 : conditions d’inscription, matériel obligatoire, barrières horaires, sécurité et modalités de course."
 permalink: /reglement-materie-obligatoire/
 ---
 
@@ -11,20 +11,21 @@ permalink: /reglement-materie-obligatoire/
 
   <main class="main">
 
-    <div class="page-title">
-
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="/">Festa</a></li>
-            <li class="current">Règlement du Festa Trail</li>
-          </ol>
-        </div>
-      </nav>
-    </div>
+    {% include page-title.html
+    title="Règlement & matériel obligatoire"
+    description="Retrouvez ici le règlement officiel du Festa Trail (inscriptions, sécurité, informations courses et matériel obligatoire)."
+    breadcrumb="Règlement & matériel obligatoire"
+    %}
 
     <section id="terms-of-service" class="terms-of-service section">
       <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <a href="/assets/pdf/reglement_festatrail_2026.pdf">Télécharger le règlement 2026 (PDF)</a>
+          </div>
+        </div>
+
         <embed src="{{'/assets/pdf/reglement_festatrail_2026.pdf' | relative_url }}" type="application/pdf" width="100%" height="800px">
       </div>
     </section><!-- /Terms Of Service Section -->
