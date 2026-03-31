@@ -31,7 +31,10 @@ Params:
             class="img-fluid mb-3"
             loading="lazy"
     >
-    <!--iframe class="trail-trace" src="https://tracedetrail.fr/fr/iframe/8161" allowfullscreen loading="lazy"></iframe-->
+    {%- endif -%}
+
+    {%- if include.gpx_iframe_id -%}
+    <iframe src="https://tracedetrail.fr/fr/iframe/{{ include.gpx_iframe_id }}" allowfullscreen style="border: 0;width: 100%; height: 800px;" scrolling="no"></iframe>
     {%- endif -%}
 
     {%- if dataset and dataset.size > 0 -%}
