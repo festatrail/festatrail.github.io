@@ -1,8 +1,10 @@
 point,distance,dplus,dminus,barrier,ravito
 Brissac,0,0,0,8h30,"Petit déjeuner"
-Saint-Jean-de-Buèges,"16,8",952,,13h00,Ravitaillement
+Roc Blanc,"8,3",800,0,0,
+Saint-Jean-de-Buèges,"16,8",952,842,13h00,Ravitaillement
+Peyre Martine,"21,8",1588,864,,
 Pégairolles-de-Buèges,26,1688,,15h30,Ravitaillement
-Causse-de-la-Selle,38,2035,,17h30,Ravitaillement
-Saint-Martin-De-Londres,48,2300,,19h30,Ravitaillement
-Cazevieille,56,2664,,,Ravitaillement
-Saint-Mathieu-De-Tréviers,65,2946,,00h30,Ravitaillement
+Causse-de-la-Selle,38,2035,1744,17h30,Ravitaillement
+Saint-Martin-De-Londres,48,2300,2049,19h30,Ravitaillement
+Cazevieille,56,2664,2200,,Ravitaillement
+Saint-Mathieu-De-Tréviers,65,2926,2845,00h30,Ravitaillement
