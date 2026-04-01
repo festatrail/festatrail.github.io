@@ -1,6 +1,6 @@
 point,distance,dplus,dminus,barrier,ravito
 Brissac,0,0,0,6h30,"Petit déjeuner"
-Roc Blanc,"8,3",800,0,0,
+Roc Blanc,"8,3",800,0,,
 Saint-Jean-de-Buèges (R1->2),"16,8",952,842,11h00,Ravitaillement
 Peyre Martine,"21,8",1588,864,,
 Pégairolles-de-Buèges (R2->3),26,1688,1451,13h30,Ravitaillement
